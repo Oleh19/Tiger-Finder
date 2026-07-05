@@ -1,0 +1,1 @@
+export const TEXT_WIDGET_MAX_LENGTH = 10_000;
