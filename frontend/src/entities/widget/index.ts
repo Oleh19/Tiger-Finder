@@ -16,5 +16,6 @@ export type {
   Widget,
   WidgetType,
 } from './model/types';
+export { TextWidgetContent } from './ui/TextWidgetContent';
 export { WidgetCard } from './ui/WidgetCard';
 export { WidgetChart } from './ui/WidgetChart';

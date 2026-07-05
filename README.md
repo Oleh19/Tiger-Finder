@@ -52,3 +52,5 @@ Backend also has `npm start` (runs the compiled `dist/`).
 - **Everything persists on the backend.** Widget type, position, and data live in SQLite, so a page refresh (and even a full backend restart) restores the dashboard exactly — same widgets, same order, same chart values.
 
 - **Loading and error states are per widget.** Each widget shows its own spinner while saving/deleting and its own error message if that action fails — one failing widget never blocks the others. If the backend becomes unreachable, the dashboard keeps showing the last loaded data and offers a **Try again** banner instead of wiping the screen.
+
+- **Deletion is two-step, so nothing is lost by accident.** The first click on a trash icon arms the button (it turns red), the second click confirms; it disarms itself after a few seconds.
